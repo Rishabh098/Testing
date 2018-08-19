@@ -20,7 +20,6 @@ pipeline {
             slackSend channel: '#himanshu',
             color: 'good',
             message: "The pipeline ${currentBuild.fullDisplayName} completed successfully."
-    }
         }
         failure {
             echo 'This will run only if failed'
