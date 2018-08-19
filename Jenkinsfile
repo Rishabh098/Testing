@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                input 'Do you want to continue!?'
                 sh 'echo "Hello World!!" '
                 sh '''
                    echo "Multiline View"
